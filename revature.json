@@ -1,0 +1,15 @@
+{
+  "type": "python",
+  "testFiles": [
+    {
+      "path": "src/test/lab_test.py",
+      "testCases": [
+        {
+          "methodName": "test_connect_to_database",
+          "label": "Verify database connection creation",
+          "description": "Checks that connect_to_database returns a valid sqlite3.Connection object and confirms the object type before closing the connection."
+        }
+      ]
+    }
+  ]
+}
