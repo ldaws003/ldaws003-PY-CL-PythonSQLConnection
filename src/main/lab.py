@@ -11,7 +11,9 @@ class Lab:
 
         try:
             print("Connecting to database...")
-            return "TODO: Connect to database"
+            connection_in_memory = sqlite3.connect(":memory")
+            connection = sqlite3.connect("db_file")
+            return connection
         except Exception as e:
             print(f"Failed to connect to database, with Exception: {e}")
             return None
